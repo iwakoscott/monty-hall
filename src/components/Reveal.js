@@ -24,7 +24,7 @@ class Reveal extends Component {
         } else {
           alert('You lost :(');
         }
-      }, 300);
+      }, 500);
     }), 500);
   }
 
@@ -39,7 +39,7 @@ class Reveal extends Component {
     return (
       <div>
         <div>
-          { this.state.reveal && <Link to='/stage-1' className="btn btn-primary btn-block btn-lg">Play Again!</Link>}
+          { this.state.reveal && <Link to='/stage-1' className="btn btn-primary btn-block btn-lg">Play Again!  <i style={{fontSize: '25px'}} className="em em-bear"></i></Link>}
         </div>
         <Stage>
           {getAllDoors().map(door => (
