@@ -32,7 +32,7 @@ class Choices extends Component {
 
       // reveal the left over goat
       this.setState(({ isFlipped, doorsLeft }) => ({
-        doorsLeft: doorsLeft.find(door => door != goatToReveal),
+        doorsLeft: doorsLeft.find(door => door !== goatToReveal),
         isFlipped: {
           ...isFlipped,
           [goatToReveal]: true
@@ -61,7 +61,7 @@ class Choices extends Component {
     if (revealWinnings){
       return <Redirect to={{
         pathname: '/stage-3',
-        state: { from: this.props.location, doorSelected: state.doorSelected }
+        state: { from: this.props.location, doorSelected: state.doorSelected, sportsCar }
       }}/>
     }
 
