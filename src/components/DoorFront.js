@@ -1,7 +1,7 @@
 import React from 'react';
 import DraggableCore from 'react-draggable';
 
-const Door = props => (
+const DoorFront = props => (
     <DraggableCore
       bounds="#main"
       onStop={props.handleDragEnd}
@@ -18,4 +18,4 @@ const Door = props => (
     </DraggableCore>
 );
 
-export default Door;
+export default DoorFront;

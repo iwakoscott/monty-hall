@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { getAllDoors } from '../utils/helpers';
 import Stage from './Stage';
-import Door from './Door';
+import DoorFront from './DoorFront';
 
 class Start extends Component {
 
@@ -42,7 +42,7 @@ class Start extends Component {
     return (
       <Stage>
         {getAllDoors().map(id =>
-          <Door
+          <DoorFront
             position={this.state.position}
             key={id}
             id={id}

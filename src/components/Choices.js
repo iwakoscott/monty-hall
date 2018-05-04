@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import Stage from './Stage';
 import { getAllDoors } from '../utils/helpers';
-import Door from './Door';
+import DoorFront from './DoorFront';
 
 class Choices extends Component {
 
@@ -51,7 +51,7 @@ class Choices extends Component {
       return (
         <Stage>
           {getAllDoors().map(door => (
-            <Door
+            <DoorFront
                 key={door}
                 id={door}
                 handleDragEnd={(e, data) => this.handleDragEnd(e, data, door)}
