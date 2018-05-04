@@ -33,6 +33,15 @@ class Choices extends Component {
   componentDidMount(){
     this.sportsCar = Math.floor(Math.random()*3);
     this.goats = getAllDoors().filter(door => door !== this.sportsCar);
+    const { state } = this.props.location;
+    if (state){
+      const { doorSelected } = state;
+      if (doorSelected.id === this.sportsCar){
+        // if I chose the sportsCar then reveal any of the two doors remaining
+      } else {
+        // otherwise I didn't choose correctly, reveal the only goat left
+      }
+    }
   }
 
   render(){
