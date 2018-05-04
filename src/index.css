@@ -11,3 +11,7 @@ body {
   border-style: dashed;
   border-width: medium;
 }
+
+.react-card-front {
+  position: relative !important;
+}

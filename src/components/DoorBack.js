@@ -3,16 +3,17 @@ import DraggableCore from 'react-draggable';
 
 const DoorBack = props => (
     <DraggableCore
+      disabled={props.disabled}
       bounds="#main"
       onStop={props.handleDragEnd}
       position={props.position}
       >
       <div
         className="card"
-        style={{width: "10rem", height: "10rem"}}>
+        style={{width: "5rem", height: "10rem"}}>
         <div className="card-body d-flex flex-column justify-content-center align-items-center">
           <h5>{props.id + 1}</h5>
-          <i className={`em em-${props.sportsCar ? 'car': 'goat'}`} style={{fontSize: 40}}></i>
+          <i className={`em em-${props.isCar ? 'car': 'goat'}`} style={{fontSize: 40}}></i>
         </div>
       </div>
     </DraggableCore>

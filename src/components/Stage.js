@@ -7,7 +7,7 @@ const Stage = props => (
         <div id="main" className="d-flex flex-column justify-content-around align-items-center" style={{height: "100vh"}}>
           <h1 className="text-center m-3">Emoji Monty Hall</h1>
           <div
-            className="container d-flex justify-content-center">
+            className="d-flex justify-content-center align-items-center">
             {props.children}
           </div>
           <div>
