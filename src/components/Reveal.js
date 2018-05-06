@@ -35,7 +35,7 @@ class Reveal extends Component {
       return <Redirect to='/stage-1' />;
     }
 
-    const { doorSelected, sportsCar } = this.props.location.state;
+    const { doorSelected, sportsCar, isFlipped } = this.props.location.state;
     return (
       <div>
         <div>
@@ -43,7 +43,7 @@ class Reveal extends Component {
         </div>
         <Stage>
           {getAllDoors().map(door => (
-            <ReactCardFlip key={door} isFlipped={this.state.reveal}>
+            <ReactCardFlip key={door} isFlipped={ isFlipped[door] || this.state.reveal}>
               <DoorFront
                 key='front'
                 id={door}

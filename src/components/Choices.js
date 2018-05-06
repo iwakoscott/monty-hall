@@ -61,7 +61,7 @@ class Choices extends Component {
     if (revealWinnings){
       return <Redirect to={{
         pathname: '/stage-3',
-        state: { from: this.props.location, doorSelected: state.doorSelected, sportsCar }
+        state: { from: this.props.location, doorSelected: state.doorSelected, sportsCar, isFlipped }
       }}/>
     }
 
