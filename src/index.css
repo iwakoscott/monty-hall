@@ -17,3 +17,9 @@ body {
 .react-card-front {
   position: relative !important;
 }
+
+.play-again-btn {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+}
