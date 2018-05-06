@@ -15,7 +15,6 @@ class Reveal extends Component {
   } // state
 
   componentDidMount(){
-    alert('Drum roll please...');
     setTimeout(() => this.setState({reveal: true}, () => {
       setTimeout(() => {
         const { sportsCar, doorSelected } = this.props.location.state;
