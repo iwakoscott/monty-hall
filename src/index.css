@@ -4,12 +4,14 @@ body {
   font-family: sans-serif;
   min-height: 100vh;
   min-width: 100%;
+  background: #fad390 !important;
+  font-family: 'Stylish', sans-serif !important;
 }
 
 #end-zone {
   z-index: -99;
   border-style: dashed;
-  border-width: medium;
+  border-width: thick;
 }
 
 .react-card-front {

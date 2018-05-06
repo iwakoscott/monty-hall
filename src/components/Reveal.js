@@ -21,7 +21,7 @@ class Reveal extends Component {
         if (sportsCar === doorSelected.id){
           alert('You win a sports car!!!');
         } else {
-          alert('You lost :(');
+          alert(`You didn't win a sports car but... you got a lovely goat 🐐`);
         }
       }, 500);
     }), 500);
@@ -38,7 +38,7 @@ class Reveal extends Component {
     return (
       <div>
         <div>
-          { this.state.reveal && <Link to='/stage-1' className="btn btn-primary btn-block btn-lg">Play Again!  <i style={{fontSize: '25px'}} className="em em-bear"></i></Link>}
+          { this.state.reveal && <Link to='/stage-1' className="btn btn-danger btn-block btn-lg">Play Again!  <i style={{fontSize: '25px'}} className="em em-bear"></i></Link>}
         </div>
         <Stage>
           {getAllDoors().map(door => (
